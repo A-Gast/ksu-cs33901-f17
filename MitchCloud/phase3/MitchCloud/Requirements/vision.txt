@@ -1,0 +1,78 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: vision.txt
+Create Date: Oct 11, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+--INTRODUCTION--------------------------------------------------------
+This Vision Document applies to the Mitchell's Homemade Ice Cream Cloud-Based Manager system, called MitchCloud. This new infrastructure cloud-based system will support the existing system along with any future expansions. 
+The MitchCloud system will introduce full support for shopping over the internet, cart checkout, payment, and delivery or store pickup of Mitchell's Ice Cream. A server-client model architecture is used where clients can communicate with MitchCloud via a website, point-of-sale, or an app. The system will serve all system users including customers, employees, and all parties that may require access to the system.
+
+--POSITIONING---------------------------------------------------------
+-Business Opportunity-
+This project will be overhauling the existing point-of-sale system and introducing it to an online system that allows all users access through internet enabled devices. Although updated, the current traditional style of service will still be applicable for customers who choose to utilize it.
+The current system is outdated and lacks new age services that customers are becoming accustomed to. Also, the current system only provides access to services while in store. The new system will provide access on and off site for many different clients through the internet.
+
+-Problem Statement-
+The outdated, traditional interaction of purchasing ice cream is slow and inefficient. This leads to lower sales and potentially dissatisfied customers and employees. A successful solution would improve the brand of Mitchell's Ice Cream, provide an easy to use service for employees and customers, and attract new customers to the store.
+
+-Product Position Statement-
+This system is for Mitchell's Ice Cream customers, store clerks, managers and system administrators. It is intended for any person who conducts business with, works for, or provides services for Mitchell's Ice Cream. The MitchCloud system is a tool that enables online services for product purchasing, checking out, sales processing, and employee & store data. Unlike the current system, which only provides point-of-sale services and system access in-store. This system provides online sales services for any customer at any store location. It provides online services for managers and employees accessable from anywhere through the internet.
+
+--STAKEHOLDER DESCRIPTIONS--------------------------------------------
+-Market Demographic-
+The typical ice cream consumer can vary in every describable aspect. The younger, tech-savy consumer demands the convenience and flexibility that an online ordering system can provide.
+
+-Stakeholder Summary-
++Local Manager represents local shops and is responsible for ensuring the system will meet the needs of each shop, which will contain location-specific information about business related information, including employee, sales, and product databases.
++Cloud Manager is responsible for ensuring the system is provided with the required tools to distribute the necessary services of the system to all users from the cloud.
++System Admin is responsible for ensuring the system is provided with tools to maintain, fix, and troubleshoot said system.
++Clerk ensures the system will meet the needs of all store clerks.
++Customer ensures the system will meet the needs of all customers.
++Sales Analyst ensures the system will meet the needs of a sales analyst, which will contain record keeping and accounting information of every store.
+
+-User Summary-
++Local Manager: Manages local inventory, orders, users and profiles; can add/remove/delete/edit. 
++Cloud Manager: Manage local inventory, discounts, products, users, profiles, orders; can add/remove/delete/edit.
++System Admin: Handle errors/failures, start/shutdown services, service requests/responses, service performancs/scaling, user roles and authorizations.
++Clerk: Process orders, order checkout, view products, manage profile.
++Customer: Process orders, order checkout, view products, manage profile.
++Sales Analyst: Generate inventory and sales reports.
+
+-Key Stakeholder Goals-
+<goal>Online Purchasing
+<priority>High 
+<problems/concerns>Purchasing products is a slow and inefficient process.
+<current solution>All transactions must occur at a physical location, but does not address the issue.
+
+<goal>Online System Access
+<priority>High
+<problems/concerns>Accessing and modifying store information (such as employee data) is unavailable off-site.
+<current solution>All information must be retrieved from inside the store through an administrator's login. This does not address the issue.
+
+--PRODUCT OVERVIEW----------------------------------------------------
+-Product Perspective-
+The MitchCloud system will supplement the current system already in place. It will utilize a server-client model architecture that can be communicated with via a website, POS, or an app.
+-Summary of Benefits-
+
+--SUMMARY OF SYSTEM FEATURES-----------------------
+- Logon
+Customers, clerks, managers, and system admins shall provide a valid ID and password for use of the MitchCloud system.
+- UI
+Customers that log into the system are presented with a user-friendly user interface to look at all of the products available. Clerks that log into the in-store POS are presented with a UI to simplify their job to make it more efficient. All products have information associated with them in plain display such as calories, ingredients, discounts and pricing. All products are weight based.
+- Product Filters
+Customers and clerks can easily navigate the UI and select filters to narrow down search results and find what they want. Specific filters can be applied such as vegan, no-sugar, allergen specific, flavor, ingredients, etc.
+- User Cart
+All customers will be given a virtual shopping care when they begin shopping. All items they want can be placed into the cart at any time and quantities can be selected. Items can also be removed from the cart. Final check out is done through the cart.
+- Payment Authorization
+The system accepts cash and credit in-store. It accepts credit and pay by phone when purchasing online. All payment methods are encrypted to protect customer information.
+- Offline Transactions
+The in-store POS system and kiosks are to accept offline transactions.
+- Pluggable Business Rules
+Authorized users can access the product database and generate promotions or sales for any product.
+- Membership Rewards
+All customers with accounts have access to a rewards system where they gain points for prizes/discounts.
+- Real-Time Transactions with Third-Party Systems
+Including inventory, accounting, tax calculators, and payment authorization services, delivery operation manager, and store databases.

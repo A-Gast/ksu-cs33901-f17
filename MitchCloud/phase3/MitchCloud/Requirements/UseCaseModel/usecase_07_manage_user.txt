@@ -1,0 +1,30 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_07_manage_user.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Local Manager, Cloud Manager, System Admin
+
+Manage User: A manager logs into the MitchCloud system. The system verifies the type of user that is accessing and sets priviledges to match. The manager searches for a user within the system by ID. The system displays the desired candidate. The manager increases the clerk's hourly wage and changes their status to manager. The system prompts to save all changes. Upon approval, the system updates the clerk's profile to reflect wage increase and sets account type and permission to manager. The user database is updated to reflect all changes. 
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee:
+
+Main Success Scenario:
+
+
+Extensions:
+
+Special Requirements:
+
+Open Issues:

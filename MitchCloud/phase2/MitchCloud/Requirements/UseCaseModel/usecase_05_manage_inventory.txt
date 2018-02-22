@@ -1,0 +1,30 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_05_manage_inventory.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Local Manager
+
+Manage Inventory: A user logs into the MitchCloud system. The system verifies the type of user that is accessing and sets priviledges to match. The user selects manage inventory. If the user does not have required authorization, access is denied and a log is kept. The system displays information from the inventory database filtered by the store the manager selects. The manager searches an item by its identifier. The system displays the current total stock in the store along with expiration dates and summary of sales of the item. The manager selects sales summary. The system prompts the manager to specify a range of dates. The manager is presented with a spreadsheet of all sales and items for the specified timeframe along with pertinent accounting information for his specific store.
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee:
+
+Main Success Scenario:
+
+
+Extensions:
+
+Special Requirements:
+
+Open Issues:

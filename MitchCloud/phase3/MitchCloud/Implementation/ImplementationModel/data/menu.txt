@@ -1,0 +1,42 @@
+0,Ice Cream,Vanilla Bean,Madagascar vanilla beans,false,14
+1,Ice Cream,Caramel Fudge Brownie,Vanilla Bean ice cream - caramel ribbon - fudge brownies,false,5
+2,Ice Cream,Chocolate Peanut Butter Cup,Organic cocoa blended with peanut butter and lots of PB cups,true,12
+3,Ice Cream,Chocolate,Organic fair-trade French cocoa,true,10
+4,Ice Cream,Caramel Sea Salt,Caramelized brown sugar and French grey sea salt,false,9
+5,Ice Cream,Blue Cosmo,Cotton candy ice cream - homemade marshmallow ribbon,false,8
+6,Ice Cream,Dark Roast Coffee,Sumatran and fair-trade South American beans,false,7
+7,Ice Cream,Cookies & Cream,,false,8
+8,Ice Cream,Key Lime Pie,,false,6
+9,Ice Cream,Black Raspberry Chocolate Chunk,Oregon black raspberries - dark chocolate,false,5
+10,Ice Cream,Coffee Chocolate Chunk,Sumatran and fair-trade South American beans - fair-trade dark chocolate,false,14
+11,Ice Cream,Bing Cherry,,false,5
+12,Ice Cream,Chocolate Chunk,,false,20
+13,Ice Cream,Peanut Butter Chocolate Chunk,Peanut butter ice cream - milk chocolate,false,20
+14,Ice Cream,Double Chocolate Chunk,Organic French cocoa - fair-trade dark chocolate,true,18
+15,Ice Cream,Fresh Strawberry,,false,11
+16,Ice Cream,Pralines & Cream,Vanilla Bean ice cream - roasted caramelencrusted pecans - caramel ribbon,false,12
+17,Ice Cream,Banana Cream Pie,Fresh banana ice cream - homemade marshmallow ribbon - homemade shortbread crust,false,9
+18,Ice Cream,Rocky Road,Belgian 58% chocolate ice cream - roasted almonds - homemade marshmallow ribbon - fair-trade dark chocolate,false,6
+19,Ice Cream,Toasted Pistachio,Homemade salted pistachio butter,false,5
+20,Ice Cream,Fresh Mint Chocolate Chunk,Fresh organic peppermint - fair-trade dark chocolate,false,11
+21,Ice Cream,Vanilla,No sugar added - fat-free,false,15
+22,Ice Cream,vanilla bean,Madagascar vanilla beans,false,10
+23,Ice Cream,Cookie Dough,,false,15
+24,Cake,Vanilla Bean,Chocolate cake topped with a layer of ice cream - topped with fudge and iced with whipped cream. Serves 10–12,false,3
+25,Cake,Fresh Mint Chocolate Chunk,Chocolate cake topped with a layer of ice cream - topped with fudge and iced with whipped cream. Serves 10–12,false,4
+26,Cake,Cookies & Cream,Chocolate cake topped with a layer of ice cream - topped with fudge and iced with whipped cream. Serves 10–12,false,3
+27,Cake,Chocolate Peanut Butter Cup,Chocolate cake topped with a layer of ice cream - topped with fudge and iced with whipped cream. Serves 10–12,false,5
+28,Cake,Black Raspberry Chocolate Chunk,Chocolate cake topped with a layer of ice cream - topped with fudge and iced with whipped cream. Serves 10–12,false,2
+29,Pie,Turtle,Chocolate graham crust filled with ice cream - topped with fudge and iced with whipped cream. Serves 8–10,false,2
+30,Pie,Fresh Mint Chocolate Chunk,Chocolate graham crust filled with ice cream - topped with fudge and iced with whipped cream. Serves 8–10,false,4
+31,Pie,Cookies & Cream,Chocolate graham crust filled with ice cream - topped with fudge and iced with whipped cream. Serves 8–10,false,3
+32,Pie,Chocolate Peanut Butter Cup,Chocolate graham crust filled with ice cream - topped with fudge and iced with whipped cream. Serves 8–10,false,7
+33,Topping,Hot Fudge,,false,29
+34,Topping,Caramel,,false,25
+35,Topping,Peanut Butter Sauce,,false,25
+36,Topping,Chocolate Sauce,,false,37
+37,Topping,Fresh Strawberry,,false,55
+38,Topping,Raspberry,,false,100
+39,Topping,Marshmallow,,false,71
+40,Topping,M&M's,,false,75
+41,Topping,Fat-Free/Sugar-Free Fudge,,false,75

@@ -1,0 +1,57 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: glossary.txt
+Create Date: Oct 15, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+<Term>
+-Definition
+--------------------------
+
+<Clerk>
+- An employee of the company. Works behind the counter serving customers and using in-store POS.
+--------------------------
+<In-Store POS>
+- Point-of-sale in store. The cash register a clerk checks a customer out at.
+--------------------------
+<Online POS>
+- Point-of-sale online service. Users can order products online through the online POS.
+--------------------------
+<Kiosk>
+- A self-ordering maching in-store that has the same functionality as ordering online.
+--------------------------
+<UI>
+- User Interface. A designed interface used for abstraction for users to easily interact with.
+--------------------------
+<Company>
+- Mitchell's Homemade Ice Cream.
+--------------------------
+<Device>
+- Any internet-enabled device capable of accessing the system via app or website.
+--------------------------
+<Member>
+- Any user that has a current profile within the system containing a user ID.
+--------------------------
+<Item Identifier>
+- Configuration of numbers and letters that are unique to one item. Each specific item has a different identifier to separate it from the rest.
+--------------------------
+<Manager>
+- A user with special permissions. Can be Local Manager, Cloud Manager.
+--------------------------
+<System State>
+- A cached, or 'snapshotted' version of the system at any given time. Usually used to restore after an error or crash.
+--------------------------
+<System Prompt>
+- When the system asks the user a question and stalls until the user gives an input.
+--------------------------
+<System * Record/Update/Remove>
+- The system accesses the required database and performs the action required.
+--------------------------
+<(Shopping) Cart>
+- A virtual container that holds all items that a user is attempting to purchase prior to checking out.
+--------------------------
+<Accounting>
+- Information about something, such as price, stock, sales, etc. Stored in a database.
+--------------------------

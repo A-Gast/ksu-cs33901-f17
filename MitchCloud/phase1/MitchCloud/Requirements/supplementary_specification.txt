@@ -1,0 +1,95 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: supplementary_specification.txt
+Create Date: Oct 15, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+<Introduction>
+The purpose of this document is to define requirements of the MitchCloud system. This Supplementary Specification lists requirements not covered in the use cases of the use-case model.
+
+<Functionality>
+Functionality common across more than one use case.
+- System Error Logging
+All system errors should be logged. They will include a detailed message of the error, data stamp and time stamp. They will be stored in the error database.
+- System Logging
+All requests, changes, creation, and removal of data is to be logged. They will be logged with the user ID and stored in the log database.
+- Remote Access
+All features of the system should be available through the internet.
+- Pluggable Rules
+The ability to customize the functionality of the system with a set of rules is to be supported.
+
+<Usability>
+Requirements that relate to the usability of the system
+- Easy Usability by Design
+The UI for in-store POS, kiosks, and online store shall be designed to make the interaction as simple and appealing as possible to all users. Appropriate text for the given scenario, clever color schemes to make the UI appealing but also functional for potential color blind users. It shall be a fast, error-free system to promote quick sales and happy customers.
+- Online Help
+Each iteration of the system (in-store POS, kiosk, online POS) shall have built-in help for the user. These will include step-by-step instructions for common problems or the ability to chat with an administrator.
+
+<Reliability>
+- Availability
+The system shall be available at all times as long as the system is online. If the system is offline, the in-store POS and kiosks are available offline during regular store hours.
+- Recoverability
+If there is a failure to use third-party services, report error to system admin and reset the UI. For in-store POS or kiost, alert an in-store manager to attempt to find a solution. Possibly revert to cash only transactions.
+
+<Performance>
+- Simultaneous Users
+There will be many concurrent users logging in or logged into the system at once. The system should support upwards of 1000 users at any time.
+- Sales and Services
+Sales must be processed very quickly for all users with payment authorization less than 50 seconds, 90% of the time.
+- Database Response Time
+Database access shall never exceed 10 seconds for any query.
+
+<Supportability>
+Requirements that promote supportability of the system.
+- Adaptability
+At any time, a given sale or promotion may be available. These can be triggered using pluggable business rules which will enable them when specified.
+- Configurability
+Different users of the system will be using various devices. From smartphones, tablets, laptops and desktop PCs. Each user will have the same functionality regardless of the device they are using. The system will configure correctly on whichever device it is accessed from.
+- Updates
+All updates to the system will be pushed to all devices from the cloud. Each user must be using an updated version of the system or some functions may fail.
+
+<Implementation Constraints>
+- C++ Solution
+System shall be written mainly in C++ as it provides the highest level of functionality and speed.
+
+<Interfaces>
+- Hardware and Interfaces
+Touch screen monitor for in-store POS and kiosks.
+Receipt printer for in-store POS and kiosks.
+Credit/debit card reader for in-store POS and kiosks.
+- Software Interfaces
+For most third-party ststems (tax calculator, databases, payment authorization etc.) we need the ability to plug into these various systems.
+
+<Operations>
+- The system will be managed by a system administrator with high level access to all sensitive data. They shall be provided with all the necessary tools to execute their job sufficiently.
+
+<Packaging>
+- Each individual product will have generic packaging with company logo and name. Clerk will write on packaging with marker to specify flavor, item name, etc.
+
+<Application-Specific Domain Rules>
+- RULE1 ->Item discount rules.
+    example: vanilla ice cream 20% off on mondays.
+Changeability: High
+Source: Local manager policy.
+- RULE2 ->Seasonal item promotions.
+    example: all gallons 25% off for the fall
+Changeability: High
+Source: Local manager / company
+- RULE3 ->Membership rewards
+    example: members get 25% off 1 gallon of ice cream on their birthday.
+Changeability: High
+Source: Local manager / company
+
+<Legal>
+- Licensing for all containers, names and flavors are subject to copyright laws within the US.
+- All tax rules must, by law, be applied during sales.
+
+<Information in Domains of Interest>
+- Pricing
+All products are priced by weight and maintain an original price, even when they have a new price indicated through a specific domain rule. Any discounted price is listed as a secondary price for all products.
+- Credit and Debit Payment Handling
+For all transactions approved by a payment authorization service, the money is to be directed towards the company selling products.
+- Sales Tax
+Sales tax calculations are to be computed at time of sale depending on the location of the store in which the items are purchased from. This can be a complicated task if the company expands into new areas where tax calculations change. Therefore, a third-party service will be used to calculate taxes at time of checkout.

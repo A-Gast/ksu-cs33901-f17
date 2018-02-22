@@ -1,0 +1,10 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: se_usecase_02_checkout_order.txt
+Create Date: Nov 8, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+checkOut
+makePayment

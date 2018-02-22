@@ -1,0 +1,39 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: business_rules.txt
+Create Date: Oct 15, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+Rule List
+(See also the separate Application-specific Rules in the Supplementary Specification.)
+
+<RULE1> - Signatures required for credit payments.
+- Changeability: Signature will be required until a new method is required by US law.
+- Source: The policy of all credit authorization companies.
+--------------------------
+<RULE2> - Identification required for unsigned card payments.
+- Changeability: Proof of identification will be required until a new method is required by US law.
+- Source: The policy of most card payment accepting companies.
+--------------------------
+<RULE3> - Tax rules. Sales require added taxes. See government statuses for current details.
+- Changeability: High. Tax laws change frequently.
+- Source: Law
+--------------------------
+<RULE4> - Credit payment reversals may only be paid as credit to the buyer's account with valid receipt, no cash.
+- Changeability: Low
+- Source: Credit authorization company policy.
+--------------------------
+<RULE5> - Delivery may only be utilized by users with a valid US address within 10 miles of the purchasing store location and on orders of $10 or greater.
+- Changeability: Low.
+- Source: Standard policy for many delivery-based companies.
+--------------------------
+<RULE6> - Membership rewards cannot be combined with special coupons or company-wide discounted items.
+- Changeability: Medium. Managers may run location-specific sales to generate profits.
+- Source: Company's request.
+--------------------------
+<RULE7> - Online users customers accessing through a browser are subject to browser checking to prevent DDoS attacks and unwanted traffic.
+- Changeability: Low. Unwanted traffic can crash the system and cause frustration to users.
+- Source: Company's request.
+--------------------------

@@ -1,0 +1,30 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_03_view_products.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Clerk, Customer
+
+View Products: User interacts with a designated UI (in-store or online) to select items to add to an order. The user selects a specific store to search or searches all locations. Users uses filters to find items by location, name, ingredients, flavor, calories, quantity in stock, sales/promotions, seasonal, etc. Users can also enter a specific item via its identifier number. If the identifier is incorrect, input is rejected and nothing is added. If the user encounters an error, the system will notify of the error and the UI will be refreshed back to where it left off. If necessary, user can contact system admin or store manager for help. Items and quantities are selected and added to the user's virtual shopping cart.
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee:
+
+Main Success Scenario:
+
+
+Extensions:
+
+Special Requirements:
+
+Open Issues:

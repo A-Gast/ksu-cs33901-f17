@@ -1,0 +1,11 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_04_manage_profile.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+Actors: Clerk, Customer, Local Manager, Cloud Manager
+
+Manage Profile: A user logs into the MitchCloud system. The system verifies the type of user that is accessing and sets priviledges to match. The user goes to manage profile and is displayed with details and options to change details about their account. The user changes attributes they have permission to change. The system prompts if they wish to save and update their profile. Upon verification, the system updates the user database with the new information and the old information is stored for record keeping.

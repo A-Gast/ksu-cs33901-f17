@@ -1,0 +1,30 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_08_manage_product.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Cloud Manager
+
+Manage Product: Cloud manager logs into system and is verified. The user accesses the product database and runs a search. The user searches the database for the current seasonal flavor and deletes it. The user then submits a query to add a new entry. The system requires the user to provide all required information for a new entry before it can be submitted. The user adds a new raw material for a seasonal flavor. The user then adds a new entry for the type of products that will be using the new flavor. The system verifies all changes with the user and updates all databases upon confirmation. All branches are updated internally and notified of the discontinued flavor as well as the new one.
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee:
+
+Main Success Scenario:
+
+
+Extensions:
+
+Special Requirements:
+
+Open Issues:

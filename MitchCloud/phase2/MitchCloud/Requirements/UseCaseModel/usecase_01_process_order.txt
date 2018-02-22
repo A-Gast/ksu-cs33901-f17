@@ -1,0 +1,111 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_01_process_order.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Use Case UC1: Process Order
+Primary Actors: Clerk, Customer
+Scope: MitchCloud
+Level: User Goal
+Stakeholders and Interests:
+-  Clerk: Wants fast, accurate item lookup. Wants easy login to begin processing an order and simple error handling.
+-  Customer: Wants fast, easy and accurate item lookup with minimal effort. Wants easily visible display of items with prices along with sales and promotions. Wants a place to store an order if they aren't ready to order right now.
+-  Company: Wants to accurately record transactions and keep customers happy. Wants automatic update of accounting and inventory information for each location.
+-  Local Manager: Wants to quickly execute override operations and easily solve Clerk problems. Wants easily accessible options for chatting with customers having questions while ordering.
+-  Cloud Manager: Wants to easily track and record information about customer's account and their order while concurrently updating inventory. Wants to save information about a customer and their sale in case it is delayed before check out.
+
+Preconditions: User (clerk or customer) is logged into system and identified/authenticated.
+
+Success Guarantee (Postconditions): Cart is saved, order placed. Balance is calculated with tax and potential delivery fees calculated correctly. Accounting and inventory are updated. Receipt generated. Payment is approved and recorded.
+
+Main Success Scenario:
+1. Customer arrives at POS <or> logs into System to order.
+2. User browses product catalog or enters item identifier. (usecase_03_view_products.txt)
+3. Item and quantity are chosen.
+4. System updates cart and displays order info.
+~steps 2-4 are repeated until ready for checkout.
+5. User selects checkout.
+6. System begins checkout order. (usecase_02_checkout_order.txt)
+7. Customer receives order items and receipt.
+
+Extensions:
+*a. At any time, System fails:
+- Ensure all events can be recovered accurately from any step in the scenario.
+-  1. User restarts system from their specific device, logs in, and requests recovery of previous state.
+-  2. System reconstructs previous state.
+*b. At any time, System is offline:
+-  1. Online ordering will be disabled until System is functioning properly.
+-  2. In store POS and kiosks use a cached version of database stored locally.
+-  3. Customer can purchase items with cash only transactions.
+-  4. All offline orders are stored in a special offline file.
+-  5. System updates via offline file once online again.
+*c. At any time, user requests order to be cancelled:
+-  1. System prompts user to verify intent to cancel.
+-  2. System removes holding tag on selected items.
+-  3. Order is fully cancelled, user's account reverts to empty cart.
+-  4. System logs a cancelled sale.
+
+1a. Customer is using in-store POS:
+-  1. Clerk asks for Customer's ID or name and searches them in the database.
+-    1a. Customer ID/name does not exist:
+-      1. System signals error to clerk
+-      2. Clerk asks customer if they want to create an account
+-        2a. Customer gives Clerk info to create an account.
+-          1. Clerk has manager create a new account for the customer (usecase_07_manage_user.txt).
+-        2b. Customer rejects, Clerk continues with guest account.
+-  2. New sale is tied to the account chosen and updated as the sale is processed.
+1b. User has an existing pickup order:
+-  1. Customer gives Clerk their ID or name.
+-  2. Manager retrieves existing order. (usecase_06_manage_order.txt)
+1c. User has a 'suspended' order:
+-  1. System loads the suspended order.
+-  2. User shopping cart is updated with items/information from the suspended order.
+1d. User has available rewards:
+-  1. System displays available membership rewards.
+-  2. User decides whether to apply reward at check out or ignore the reward.
+(~ use case View Products 2a,2b,2c ~)
+2a. Invalid identifier:
+-  1. System signals error and rejects entry.
+2b. User encounters error:
+-  1. System displays error message and asks if the user wants to chat with someone for help.
+-    1a. User selects to enter chat room for help:
+-      1. System connects user to first available person to help assist with any issues.
+-  2. System refreshes back to a working state.
+2c. User requires help:
+-  1. User selects option for help.
+-  2. System connects user to first available person to help assist with any issues.
+3a. Item is sold out:
+-  1. System informs user the item is unavailable at this time. Presents potential date it will be available.
+-  2. Rejects selection.
+3b. Item has limited quantity:
+-  1. System informs user that they can only select 'x' amount per user/transaction.
+-  2. Rejects selection if quantity too high.
+3-4a. Item must be removed from the list:
+-  1. User enters shopping cart and removes desired item.
+-  2. System updates shopping cart information to reflect changes.
+3-4b. Item is part of promotion/sale:
+-  1. System informs user that the item has special properties.
+-  2. System updates shopping cart to reflect changes from promotional item.
+5a. User does not check out, but exits:
+-  1. System saves user's order under the specified account.
+-  2. Order is labeled as 'suspended' until the user logs back in.
+5b. User selects to check out now:
+-  1. System proceeds to order check out -> usecase_02_checkout_order.txt
+
+Special Requirements: 
+- For in store POS: touch screen UI on monitor.
+- Internet-enabled device.
+- 
+
+Technology and Data Variations List:
+2a. For in store POS: Clerk may enter item identifier by bar code laser scanner or keyboard.
+
+Frequency of Occurrence: Could be nearly continuous.
+
+Open Issues:
+- What are tax law variations?
+- Can guest accounts be eligible for rewards/promotions?
+- Should tip be included for delivery?

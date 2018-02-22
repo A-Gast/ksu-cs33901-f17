@@ -1,0 +1,48 @@
+NEED TO ADD TO MITCHCLOUD:
+----------------------------
+![add to pos class: user auth list with username + password for authentication]
+	>> 
+![add to catalog: inventory information for each product]
+	>> ProductCatalog addItem(....int stocked)
+	>> ProductDescription --> int stocked;
+
+search(std::string query) (usecase 3 - view products)
+	search(int itemID)
+CLASS Account (usecase 4 - manage profile)
+	*Clerk, Customer, Local Manager, Cloud Manager
+	account type (customer, employee, manager)
+	personal info
+	edit info (name, bank account info, address)
+	authorized update only (cant update other's accounts)
+
+manage inventory (usecase 5 - manage local inventory)
+	*Local Manager
+	view inventory
+	update
+	sales summary
+	expiration dates
+	ready made products (gallons ice cream, special requests)
+
+manage order (usecase 6)
+	*Local Manager, Cloud Manager
+	need to log orders in format that can be parsed and read
+	access orders
+	edit orders
+	delete orders
+
+manage user accounts (usecase 7)
+	*Local Manager, Cloud Manager
+	edit, view, remove user accounts
+	create accounts
+	
+manage products (usecase 8)
+	*Cloud Manager
+	create, remove products [in catalog?]
+
+manage discounts (usecase 9)
+	*Cloud Manager
+	create, update, delete discounts and promotions
+
+generate sales report (usecase 10)
+	*Sales Analyst
+	generate report based on input given

@@ -1,0 +1,30 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_06_manage_order.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Local Manager, Cloud Manager
+
+Manage Order: A customer arrives in store to pick up an order. An authorized manager logs into the system. The manager selects manage orders and searches the database for the order by order ID, customer ID, or customer name. The desired order is selected and the system displays details about the order. The manager gives the purchased items to the customer and updates the order as finalized. The system logs the order, and updates all necessary databases as the order is finalized.
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee:
+
+Main Success Scenario:
+
+
+Extensions:
+
+Special Requirements:
+
+Open Issues:

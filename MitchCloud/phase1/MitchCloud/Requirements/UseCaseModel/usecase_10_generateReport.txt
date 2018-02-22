@@ -1,0 +1,11 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_10_generate_report.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+Actors: Sales Analyst
+
+Generate Report: Sales analyst logs into MitchCloud system. User permissions are verified upon login. Sales analyst selects option to generate sales report. System prompts user to input parameters in which the report will be generated from. User inputs required information such as user type, zip code, city, address, period of time, store ID, order type, etc. The system searches all databases based on the input parameters and generates a spreadsheet with all the required information on it. The system logs the query request and stores it in a database requiring permission to access. The user then accesses the sales report and saves an encrypted read-only copy.

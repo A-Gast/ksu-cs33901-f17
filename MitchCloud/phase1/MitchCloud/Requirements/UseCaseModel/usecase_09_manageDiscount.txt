@@ -1,0 +1,11 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_09_manage_discount.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+Actors: Cloud Manager
+
+Manage Discount: Cloud manager logs into system and is verified. The user accesses the product database and runs a search for current discounts. The system displays all current products that are offered at a discounted price. The user removes the fixed seasonal price from an near expiring product. The user adds a custom discount price to the expiring product which will last until it is sold out. The system verifies all changes with the user and updates product database upon confirmation. All branches are updated internally by the system to adopt the new pricing.

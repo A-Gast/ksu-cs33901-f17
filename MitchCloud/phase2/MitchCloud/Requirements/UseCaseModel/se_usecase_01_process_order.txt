@@ -1,0 +1,14 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: se_usecase_01_process_order.txt
+Create Date: Nov 7, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+startNewOrder
+findProduct
+addToCart
+removeFromCart
+checkOut
+makePayment

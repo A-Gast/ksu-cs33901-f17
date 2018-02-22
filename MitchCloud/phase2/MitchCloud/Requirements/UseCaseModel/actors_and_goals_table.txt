@@ -1,0 +1,65 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: vision.txt
+Create Date: Oct 15, 2017
+Author: Andrew Gast
+Version: 1.0
+//--------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Actor				|   Goals									|
+-------------------------------------------------------------
+Clerk 			|	
+				|	process order
+				|	checkout order
+				|	view/filter products
+				|	clock in/out
+				|	view/edit profile
+				|	
+-------------------------------------------------------------
+Customer		|	
+				|	view items
+				|	purchase items
+				|	checkout items
+				|	create account
+				|	view/edit profile
+				|	
+-------------------------------------------------------------
+Local Manager	|	
+				|	create/update/delete users
+				|	create/update/delete orders
+				|	track local inventory
+				|	view/edit profile
+				|	view/edit employees
+				|	
+-------------------------------------------------------------
+Cloud Manager	|	
+				|	manage product discounts/pricing
+				|	manage product descriptions
+				|	create user
+				|	modify user
+				|	delete user
+				|	manage all orders
+				|	manage raw materials
+				|
+-------------------------------------------------------------
+System Admin	|	
+				|	start/shutdown system
+				|	perform system maintenance
+				|	handle system errors/failures
+				|	manage service requests
+				|	manage service performance
+				|	manage users and cloud managers
+				|	handle user roles and permissions
+				|	
+-------------------------------------------------------------
+Sales Analyst	|	
+				|	access all sales
+				|	access all orders
+				|	access all user info
+				|	access all accounting information
+				|	generate inventory reports
+				|	generate sales reports
+				|	
+-------------------------------------------------------------

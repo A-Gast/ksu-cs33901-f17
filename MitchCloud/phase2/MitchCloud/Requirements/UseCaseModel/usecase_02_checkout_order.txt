@@ -1,0 +1,37 @@
+//-------------------------------------------------------------------
+System Name: MitchCloud
+Artifact Name: usecase_02_checkout_order.txt
+Create Date: Oct 14, 2017
+Author: Andrew Gast
+Version: 2.0
+//--------------------------------------------------------------------
+
+Actors: Clerk, Customer
+
+Checkout Order: A User has finished adding items to the cart and proceeds to checkout. Tax is calculated by the tax calculator service and the total balance is updated. An in-store Clerk uses the POS system to take payment from the Customer, accepting cash and credit. An online shopper is presented with options for their order. They can have it delivered or they can choose to pick it up at their home store, this is handled by the shipping management system. Online customers may pay through the system using credit card or phone payment. Any issues with payment are handled through the system and alternative payment methods are offered if one does not work. At all times, customers can be connected with a system administrator or store manager for help. Once payment is successfully completed and the system verifies it as received, user profile is updated to reflect the recent purchase. Online users are redirected to a verification screen where they can print their receipt and continue browsing the store. Process Order (usecase_01_process_order.txt) continues from main success scenario #8.
+
+-------
+Use Case UC
+Level:
+Primary Actor:
+Stakeholders and Interests:
+
+Preconditions:
+
+Success Guarantee: Order is saved. Balance is calculated with tax and potential delivery fees calculated correctly. Accounting and inventory are updated. Receipt generated. Payment is approved and recorded.
+
+Main Success Scenario:
+
+
+Extensions:
+
+10a. Customer selected delivery.
+-  1. Order is sent to User's home store.
+-  2. Items are packaged and sent out for delivery.
+10b. Customer selected in-store pickup.
+-  1. Order is sent to User's home store.
+-  2. Items are packaged and set aside for Customer to pickup.
+
+Special Requirements:
+
+Open Issues:
