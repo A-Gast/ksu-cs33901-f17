@@ -1,0 +1,44 @@
+TicTacToe Success Scenario -- Andrew Gast
+--------------------------
+--------------------------
+Use-Case: Start Game
+1. The user executes the Tic Tac Toe game.
+2. The game prompts the user whether they want to play single player or 2 player.
+3. The user chooses whether they want to play versus a human or computer opponent.
+4. The game engine reads an input from the user.
+5. If the input is invalid, then <<A1>>
+6. If the input is 'quit', then <<A2>>
+7. The game engine creates a player 2 for the game, controlled by either the computer or another human player.
+8. Each player is issued a game piece, X or O.
+--
+~Game has successfully been started
+
+A1. The game engine notifies user of input error and lets them try again.
+A2. The game engine ends the game and terminates.
+
+--------------------------
+Use-Case: Make Move
+1.  The user is displayed an updated game board to reflect previous moves.
+2.  The game prompts the user to select a location for their next move.
+3.  The user selects the location they would like to place their game piece.
+4.  If the user enters 'quit', then <<A1>>
+5.  The game engine checks the selected location.
+6.  If the location is invalid, then <<A2>>
+7.  If the location is already occupied, then <<A3>>
+8.  If the location results in an end-of-game scenario, then <<A4>>
+9.  The game places the user's game piece in the location they chose and updates the game board display.
+10. The game checks stats (wins, streak and credits) of all players.
+11. If any player has a win streak of 3, 6, or 9, then <<A5>>
+12. If any player has a win streak of 10 or holds $1m credits, then <<A6>>
+--
+~Move has successfully been executed and the next player is up
+
+A1. The game engine ends the game and terminates.
+A2. The user's input is skipped and they are given another chance to pick a spot.
+A3. The user is notified that that space is occupied and given another chance to choose a spot.
+A4. The game determines whether there was a win or a tie and adds to the score tracker. Winner is displayed on screen and new round starts.
+A5. The player holding the win streak is asked whether they would like to cash out or continue on to win more money. Computer always cashes out.
+    If cash out is chosen, the game awards the player with credits and their streak is reset. If continue is chosen, the player is not awarded
+	credits and their streak continues to be tracked.
+A6. The player has reached the maximum amount of credits and automatically wins. Winner displayed and fresh game starts.
+
